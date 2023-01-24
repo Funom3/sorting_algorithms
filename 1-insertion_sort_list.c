@@ -33,7 +33,7 @@ void insertion_sort_list(listint_t **list)
 						aux2->next->prev = aux1;
 					if (aux2)
 					{
-						aux2->prev = aux2;
+						aux2->prev = aux2->prev;
 						aux2->next = aux1;
 					}
 					if (aux1)
