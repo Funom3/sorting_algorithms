@@ -24,7 +24,7 @@ void insertion_sort_list(listint_t **list)
 			{
 				flag = 0;
 				head_tmp2 = head_tmp1;
-				while (head_tmp2 && head_tmp2->next->n)
+				while (head_tmp2 && head_tmp2->n > head_tmp2->next->n)
 				{
 					aux1 = head_tmp2;
 					aux2 = head_tmp2->next;
